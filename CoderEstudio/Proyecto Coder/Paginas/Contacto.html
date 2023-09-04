@@ -4,31 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Market</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <script src="https://kit.fontawesome.com/64b223fe82.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Green Market</a></h1>
-            <li><a href="Info.html">Un poco de nosotros</a></li>
-            <li><a href="Productos.html">Productos que ofrecemos</a></li>
-            <li><a href="Envios.html">Envios</a></li>
-        </nav>
-    </header>
-    <main>
+      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Green Market</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Contacto.html">Contactos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Envios.html">Envios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Info.html">Info</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <main class="main-contacto">
         <h2>Contactate con nosotros</h2>
         <p>Ingresa tus datos y tu duda asi podemos ponernos en contacto con vos y gestionarte una solucion lo antes posible!</p>
-        <input type="email" placeholder="Inserte su email">
-        <input type="number" placeholder="Ingrese su numero telefonico">
-        <textarea placeholder="¿En que podemos ayudarlo?"></textarea>
-        <input type="submit">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <form class="form-contactos">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Casilla de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">En que podemos ayudarlo?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2" center-content>
+              <button class="btn btn-primary mb-3 botonC" type="submit">Button</button>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </form>
+      </div>
+       <div class="col-2"></div>   
+      </div>
     </main>
-    <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus accusamus molestias earum sit nisi fugiat unde. Praesentium quis nam, voluptatum voluptate omnis iste, laborum distinctio facilis dicta, necessitatibus mollitia!</p>
-        <a href="https://facebook.com" target="_blank"><i class="IconoA fa-brands fa-facebook"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="IconoB fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="IconoC fa-brands fa-twitter"></i></a>
+    <div class="row">
+      <footer>
+        <div class="col-8">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus accusamus molestias earum sit nisi fugiat unde. Praesentium quis nam, voluptatum voluptate omnis iste, laborum distinctio facilis dicta, necessitatibus mollitia!</p>
+        </div>
+        <div class="col-2">
+          <a href="https://facebook.com" target="_blank"><i class="IconoA fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="IconoB fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="IconoC fa-brands fa-twitter"></i></a>
+        </div>
     </footer>
+   </div> 
+    <script src="../Js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

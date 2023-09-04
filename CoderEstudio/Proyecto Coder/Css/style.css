@@ -1,100 +1,131 @@
 * {
     font-weight: 200;
     scroll-behavior: smooth;
+    /* border: 1px solid black; */
 }
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(208,15,217,1) 2%, rgba(116,9,121,1) 60%, rgba(0,212,255,1) 94%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-}
-/* Header */
-.superior {
-    width: 100%;
-    margin-bottom: 10px;
-}
-.Links {
-    width: 100%;
-    margin-left: 85%;
-}
-li {
-    list-style: none;
-}
-nav > h1 {
-    color: rgb(3, 0, 6);
-    font-family: sans-serif;
-    font-weight: 500;
-    text-align: center;
-}
-nav > li {
-    width: 100%;
-    text-align: end;
-}
-a {
-    text-decoration: none;
+    width: 100vw;
+    height: 100vh;
 }
 /* Main Index */
-.IniciodeSesion {
-    width: 100%;
+.main-index {
+    margin-top: 20px;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
-.IniciodeSesion > a {
-    position: relative;
-    left: 44.2%;
-    width: 100%;
+/* Form Inicio de Sesion Index */
+.form-section {
+    grid-row: 1/2;
+    grid-column: 1/4;
 }
+.form-index {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-index > header {
+    text-align: center;
+}
+.btn {
+    margin-top: 8px;
+}
+/* Text Section */
+.text-section {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+/* Vid Section */
 .vid {
+    grid-row: 2/3;
+    grid-column: 2/3;
     width: 100%;
 }
 .vid > video {
-    margin-top: 20px;
-    margin-left: 25%;
     width: fit-content;
     height: 400px;
 }
-/* Registro */
-#registro {
-    width: 100%;
-}
-form {
-    width: 100%;
-    height: fit-content;
-}
-form > input {
-    position: relative;
-    left: 44%;
-    text-align: center;
-    margin: 4px 0;
-    display: block;
-}
-form > input:last-child {
-    left: 47%;
-}
-form > header {
-    text-align: center;
-    font-weight: 300;
-    font-size: 22px;
-}
 /* footer */
-footer {
+@media screen and (min-width: 768px) {
+    .footer-index {
+    margin-top: 20px;
     width: 100%;
-}
-footer > p {
+    }
+    .footer-index > p {
     display: inline-block;  
-    width: 70%;
-    text-align: center;
+    width: 60%;
+    }
+    .links-container {
+    width: 20%;
+    display: inline-block;
+    text-align: end;
+    }
 }
-.Redes {
-    width: 25%;
-    display: inline;
+
+/* Media queris del index */
+@media screen and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .main-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr fit-content;
+        width: 100vw;
+        gap: 6px;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+    .form-section {
+        justify-self: center;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .text-section {
+        justify-self: center;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin-right: 10px;
+    }
+    .text-section > p {
+        display: inline-block !important;
+    }
+    .vid {
+        justify-self: center;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-left: 20px;
+    }
+    .footer-index {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        border-top: 1px outset black;
+    }
+    .footer-index > p{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .footer-index > .links-container {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .links-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
-a > i {
-    position: relative;
-    left: 350px;
-    bottom: 10px;
-}
+/* Fin de Index */
+/* Comienzo de Productos */
 /* Main Productos */
 .h1p {
     text-align: center;
@@ -152,31 +183,17 @@ p {
     text-align: center;
 }
 /* Main contactos */
-main {
+.main-contacto {
     width: 100%;
     height: fit-content;
+    margin: 0px 10px;
 }
-input {
-    position: relative;
-    left: 44%;
-    text-align: center;
-    margin: 4px 0;
-    display: block;
+.form-contacto {
+    display: flex;
+    width: 100vw;
 }
-textarea {
-    position: relative;
-    left: 44%;
-    text-align: center;
-    margin: 4px 0;
-    display: block;
-}
-input:last-child {
-    left: 47%;
-}
-main > h2, main > p {
-    text-align: center;
-    font-weight: 300;
-    font-size: 22px;
+.col-8 {
+    display: inline-block;
 }
 /* Main Info*/
 main > h2 {
