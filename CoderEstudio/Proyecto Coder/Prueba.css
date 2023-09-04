@@ -1,0 +1,11 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.sticky-top {
+    background-color: rgb(230,120,60) !important;
+}

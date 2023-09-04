@@ -1,0 +1,189 @@
+* {
+    font-weight: 200;
+    scroll-behavior: smooth;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(208,15,217,1) 2%, rgba(116,9,121,1) 60%, rgba(0,212,255,1) 94%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+/* Header */
+.superior {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Links {
+    width: 100%;
+    margin-left: 85%;
+}
+li {
+    list-style: none;
+}
+nav > h1 {
+    color: rgb(3, 0, 6);
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+nav > li {
+    width: 100%;
+    text-align: end;
+}
+a {
+    text-decoration: none;
+}
+/* Main Index */
+.IniciodeSesion {
+    width: 100%;
+}
+.IniciodeSesion > a {
+    position: relative;
+    left: 44.2%;
+    width: 100%;
+}
+.vid {
+    width: 100%;
+}
+.vid > video {
+    margin-top: 20px;
+    margin-left: 25%;
+    width: fit-content;
+    height: 400px;
+}
+/* Registro */
+#registro {
+    width: 100%;
+}
+form {
+    width: 100%;
+    height: fit-content;
+}
+form > input {
+    position: relative;
+    left: 44%;
+    text-align: center;
+    margin: 4px 0;
+    display: block;
+}
+form > input:last-child {
+    left: 47%;
+}
+form > header {
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+}
+/* footer */
+footer {
+    width: 100%;
+}
+footer > p {
+    display: inline-block;  
+    width: 70%;
+    text-align: center;
+}
+.Redes {
+    width: 25%;
+    display: inline;
+}
+a > i {
+    position: relative;
+    left: 350px;
+    bottom: 10px;
+}
+/* Main Productos */
+.h1p {
+    text-align: center;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.imgp {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.pricing1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.Pack {
+    width: 200px;
+    border: 2px solid black;
+}
+.Pack > header, p{
+    text-align: center;
+}
+.packs {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+.A {
+    left: 13%;
+}
+.A > label {
+    position: absolute;
+    bottom: 205px;
+}
+.B {
+    left: 30%;
+}
+.C {
+    left: 48%;
+}
+.imgl {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+/* Main envios */
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+/* Main contactos */
+main {
+    width: 100%;
+    height: fit-content;
+}
+input {
+    position: relative;
+    left: 44%;
+    text-align: center;
+    margin: 4px 0;
+    display: block;
+}
+textarea {
+    position: relative;
+    left: 44%;
+    text-align: center;
+    margin: 4px 0;
+    display: block;
+}
+input:last-child {
+    left: 47%;
+}
+main > h2, main > p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+}
+/* Main Info*/
+main > h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+main > p {
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Food Survey</title>
+</head>
+<body>
+	<h1 id="title">This is a new survey test by me</h1>
+	<p id="description">This is a short food survey made by me to proove my coding skills</p>
+	<div id="container">
+		<form id="survey-form">
+			<fieldset class="datos">
+				<label for="text" id="name-label"> Name </label><input type="text" name="nombre" id="name" required placeholder="Enter your name">
+				<label for="email" id="email-label"> Email </label><input type="email" name="email" id="email" placeholder="Enter your email" required>
+				<label for="number" id="number-label"> Age </label><input type="number" name="numero" id="number" min="10" max="70"placeholder="Age">
+			</fieldset>
+			<fieldset class="elección">
+				<h2>If you could choose a meal for the eternity, what meal would it be?:</h2>
+				<input type="radio" name="1" id="i1" value="steak"><label for="i1">Steak and fries</label>
+				<input type="radio" name="1" id="i2" value="Pasta"><label for="i2">Pasta carbonara</label> 
+				<input type="radio" name="1" id="i3" value="Pizza"><label for="i3">Pizza napolitana</label>
+			</fieldset>	
+			<fieldset class="preferencias">
+				<select id="dropdown">
+					<option id="option1">Would you rather</option>
+					<option id="option2">Sweet food</option>
+					<option id="option3">Salty food</option>
+				</select>
+			</fieldset>
+			<fieldset class="texto">
+				<textarea id="texto" placeholder="Insert a brief description of how would you cook your favorite meal"></textarea>
+			</fieldset>
+			<fieldset class="checkbox">
+				<h3>How did you find the survey experience?:</h3>
+				<input type="checkbox" name="check1" value="hola1" id="hola1"><label for="hola1">Bad</label>
+				<input type="checkbox" name="check1" value="hola2" id="hola2"><label for="hola2">Awesome</label>
+			</fieldset>
+			<div class="container2">
+				<input type="submit" name="boton" id="submit" class="boton" value="Submit">
+			</div>	
+		</form>
+	</div>
+</body>
+</html>

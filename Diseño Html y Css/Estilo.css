@@ -1,0 +1,49 @@
+.articulo {
+	margin: auto;
+}
+.clase1 {
+	color: red;
+	font-family: fantasy;
+	font-weight: 30;
+	line-height: 3;
+	padding: 60;
+	background-color: black;
+}
+.clase2 {
+	color: yellow;
+	font-family: Georgia;
+	padding: 0;
+	font-weight: 30;
+	background-color: darkblue; 
+}
+img {
+	background-color: white;
+	border: borderbox;
+	width: 800px;
+	border-color: white;
+	border-width: 3cm;
+}
+p {
+	font-family: fantasy;
+}
+footer {
+	font-size: 50;
+	line-height: 10;
+}
+article p {
+	color: blueviolet;
+	font-size: 3000;
+	font-family: cursive;
+	padding: 1.5cm;
+	background-color: yellowgreen;
+}
+a {
+	font-family: fantasy;
+	display: inline;
+	background-color: lightblue;
+	color: black;
+}
+/* {
+	padding: 1;
+	margin: 1;
+}
