@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../Css/bootstrap.min.css">
     <link rel="stylesheet" href="../Css/style.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/64b223fe82.js" crossorigin="anonymous"></script>
-    <title>Green Market</title>
+    <title>Productos-Green Market</title>
 </head>
 <body>
-    <header class="superior">
-        <nav>
-            <h1><a href="../index.html">Green Market</a></h1>
-                <div class="Links"> 
-                    <li><a href="Contacto.html">Contactanos para mas información</a></li>
-                    <li><a href="Info.html">Un poco de nosotros</a></li>
-					<li><a href="Envios.html">Envios</a></li>
-                </div>
-        </nav>
-    </header>
+	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" target="_blank">Green Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="Contacto.html" target="_blank">Contacanos</a>
+              <a class="nav-link" href="Info.html" target="_blank">Sobre nosotros</a>
+              <a class="nav-link" href="Productos.html" target="_blank">Productos</a>
+              <a class="nav-link" href="Envios.html" target="_blank">Envios</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     <main>
-        <section class="pricing1">
-			<div class="Pack K">
-				<header><span>Pack basico</span></header>
-				<p>$600</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<input type="submit" id="submit" value="select" name="">
+		<div class="container container-info mt-4">
+			<div class="row">
+				<div class="col">
+				 <div class="card" style="width: 18rem;">
+				 <img src="Vegetales.jpg" class="card-img-top" alt="...">
+				 <div class="card-body">
+			  	 <h5 class="card-title">Pack 1</h5>
+			  	 <p class="card-text">Pack completo para una persona.</p>
+			  	 <a href="#" class="btn btn-primary">Comprar</a>
+				</div>
+		  </div></div>
+			<div class="col"><div class="card" style="width: 18rem;">
+			<img src="Vegetales2.jpeg" class="card-img-top" alt="...">
+			<div class="card-body">
+			<h5 class="card-title">Pack 2</h5>
+			<p class="card-text">Pack para 2 o 3 personas con mas variedad que el primer pack.</p>
+			<a href="#" class="btn btn-primary">Comprar</a>
 			</div>
-			<div class="Pack A">
-				<header>Pack mediano (2 personas)</header>
-				<p>$900</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<input type="submit" id="submit" value="select" name="">
+		  </div></div>
+			<div class="col">
+			<div class="card" style="width: 18rem;">
+				<img src="Vegetales3.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+			  	<h5 class="card-title">Pack 3</h5>
+			  	<p class="card-text">Pack familiar, para hasta 6 personas, incluye todas las verduras disponibles en nuestro catalogo.</p>
+			  	<a href="#" class="btn btn-primary">Comprar</a>
+			</div></div>
 			</div>
-			<div class="Pack P">
-				<header>Pack premium familiar</header>
-				<p>$1200</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<input type="submit" id="submit" value="select" name="">
-			</div>
-		</section>
-		<section class="Packs img">
-			<h1 class="h1p">Aca podes ver los packs</h1>
-			<div class="packs A">
-				<label class="imgl">Pack basico</label>
-				<img class="imgp" src="Vegetales.jpg">
-			</div>
-			<div class="packs B">
-				<label class="imgl">Pack mediano</label>
-				<img class="imgp" src="Vegetales2.jpeg">
-			</div>
-			<div class="packs C">
-				<label class="imgl">Pack Familiar</label>
-				<img class="imgp" src="Vegetales3.jpg">
-			</div>
-		</section>
+		</div>
     </main>
-    <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus accusamus molestias earum sit nisi fugiat unde. Praesentium quis nam, voluptatum voluptate omnis iste, laborum distinctio facilis dicta, necessitatibus mollitia!</p>
-        <div class="Redes">	
-			<a href="https://facebook.com" target="_blank"><i class="IconoA fa-brands fa-facebook"></i></a>
-        	<a href="https://instagram.com" target="_blank"><i class="IconoB fa-brands fa-instagram"></i></a>
-        	<a href="https://twitter.com" target="_blank"><i class="IconoC fa-brands fa-twitter"></i></a>
-		</div>	
+    <footer class="footer-index footer-info">  
+        <div class="container">
+          <div class="row">
+              <div class="col-8">
+                <p>Síguenos en nuestras redes sociales para mantenerte al tanto de nuestras últimas ofertas, recetas saludables y consejos sobre una alimentación equilibrada.</p>
+              </div>
+              <div class="col">  
+                <div class="links-container">
+                <a href="https://facebook.com" target="_blank"><i class="IconoA fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="IconoB fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="IconoC fa-brands fa-twitter"></i></a>
+              </div>  
+            </div>
+          </div>
+        </div>  
     </footer>
+	<script src="../Js/bootstrap.bundle.js"></script>
 </body>
 </html>
