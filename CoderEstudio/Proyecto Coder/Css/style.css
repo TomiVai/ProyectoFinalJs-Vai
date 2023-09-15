@@ -212,11 +212,13 @@ body {
     position: absolute;
 }
 /* Main envios */
-h1 {
-    text-align: center;
+.list-envios > li {
+    list-style: none;
 }
-p {
-    text-align: center;
+.list-envios > li > strong {
+    font-weight: 400;
+    text-decoration: underline 1px double;
+    font-size: 18px;
 }
 /* Main contactos */
 .main-contacto {
