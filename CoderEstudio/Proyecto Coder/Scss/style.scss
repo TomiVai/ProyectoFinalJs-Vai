@@ -1,0 +1,66 @@
+* {
+    font-weight: 200;
+    scroll-behavior: smooth;
+    font-family: 'Amaranth', sans-serif;
+}
+body {
+    background-color: #F3F9D2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.navbar {
+    background-color: #3D0B37 !important;
+    .navbar-brand, .nav-link {
+        color: #F3F9D2 !important;
+    }
+}
+// Main Style //
+.navbar-toggler {
+    background-color: #F3F9D2;
+}
+.main-index {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    .Index-Container {
+        grid-row: 1/2;
+    }
+    .Index-Container > li {
+        text-decoration: underline double black;
+    }
+    // Form Inicio de Sesion //
+    .form-section {
+        grid-row: 2/3;
+        .form-index {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+        .form-index > header {
+        text-align: center;
+    }
+        .btn {
+        margin-top: 8px;
+    }
+        .card-body {
+        background-color: #F3F9D2;
+    }
+    } 
+    // Video //
+    .vid {
+        grid-row: 3/4;
+        width: 100%;
+    }
+    .vid > video {
+        width: fit-content;
+        height: 400px;
+    }
+}
+@import url(../Assets.Scss/_Queris.scss);
+// Fin De Index //

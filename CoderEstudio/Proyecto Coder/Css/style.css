@@ -1,257 +1,68 @@
+@import url(../Assets.Scss/_Queris.scss);
 * {
-    font-weight: 200;
-    scroll-behavior: smooth;
-    font-family: 'Amaranth', sans-serif;
-    /* border: 1px solid black; */
+  font-weight: 200;
+  scroll-behavior: smooth;
+  font-family: "Amaranth", sans-serif;
 }
-.navbar {
-    background-color: #3D0B37 !important;
-}
-.navbar-brand, .nav-link {
-    color: #F3F9D2 !important;
-}
-body {
-    background-color: #F3F9D2;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
-}
-/* Main Index */
-.navbar-toggler {
-    background-color: #F3F9D2;
-}
-.main-index {
-    margin-top: 20px;
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-}
-/* Form Inicio de Sesion Index */
-.form-section {
-    grid-row: 2/3;
-}
-.form-index {
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form-index > header {
-    text-align: center;
-}
-.btn {
-    margin-top: 8px;
-}
-.card-body {
-    background-color: #F3F9D2;
-}
-/* Text Section */
-.Index-Container {
-    grid-row: 1/2;
-}
-.Index-Container > li {
-    text-decoration: underline double black;
-}
-/* Vid Section */
-.vid {
-    grid-row: 3/4;
-    width: 100%;
-}
-.vid > video {
-    width: fit-content;
-    height: 400px;
-}
-/* footer */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        width: 100%;
-        height: 100%;
-        /* overflow-x: hidden; */
-    }
-    .main-index {
-        height: min-content;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: fit-content fit-content 1fr;
-        width: 100%;
-        grid-auto-flow: column;
-        justify-content: center;
-    }
-    .Index-Container {
-        justify-self: center;
-        grid-row: 1/2;
-        height: fit-content !important;
-    }
-    .Index-Container > p {
-        display: inline-block !important;
-    }
-    .form-section {
-        width: 100%;
-        justify-self: center;
-        grid-row: 2/3;
-    }
-    .main-final {
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-        grid-auto-flow: row;
-        grid-row: 3/4;
-    }
-    .text-vid {
-        grid-column: auto;
-        grid-row: 1/2;
-        justify-content: safe;
-        flex-wrap: wrap;
-    }
-    .vid {
-        grid-column: auto;
-        grid-row: 2/3;
-        width: 100%;
-        justify-self: center;
-    }
-}
-/* Media queris del index */
 
-@media screen and (max-width: 767px) {
-    body {
-        width: 100%;
-        height: 100%;
-        /* overflow-x: hidden; */
-    }
-    .main-index {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
-        grid-auto-flow: row;
-        justify-content: center;
-    }
-    .Index-Container {
-        grid-row: 1/2;
-    }
-    .form-section {
-        justify-self: center;
-        grid-row: 2/3;
-    }
-    .main-final {
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-        grid-auto-flow: row;
-        grid-row: 3/4;
-    }
-    .text-vid {
-        grid-column: auto;
-        grid-row: 1/2;
-        justify-content: safe;
-        flex-wrap: wrap;
-    }
-    .vid {
-        grid-column: auto;
-        grid-row: 2/3;
-        width: 100%;
-        justify-self: center;
-    }
+body {
+  background-color: #F3F9D2;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
-/* Fin de Index */
-/* Comienzo de Productos */
-/* Main Productos */
-.h1p {
-    text-align: center;
-    font-weight: 300;
-    font-family: sans-serif;
-    text-decoration: underline;
+
+.navbar {
+  background-color: #3D0B37 !important;
 }
-.imgp {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    overflow: hidden;
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #F3F9D2 !important;
 }
-.pricing1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
+
+.navbar-toggler {
+  background-color: #F3F9D2;
 }
-.Pack {
-    width: 200px;
-    border: 2px solid black;
+
+.main-index {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
 }
-.Pack > header, p{
-    text-align: center;
+.main-index .Index-Container {
+  grid-row: 1/2;
 }
-.packs {
-    display: inline-block;
-    margin: 0;
-    position: relative;
+.main-index .Index-Container > li {
+  text-decoration: underline double black;
 }
-.A {
-    left: 13%;
+.main-index .form-section {
+  grid-row: 2/3;
 }
-.A > label {
-    position: absolute;
-    bottom: 205px;
+.main-index .form-section .form-index {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.B {
-    left: 30%;
+.main-index .form-section .form-index > header {
+  text-align: center;
 }
-.C {
-    left: 48%;
+.main-index .form-section .btn {
+  margin-top: 8px;
 }
-.imgl {
-    text-align: center;
-    width: 100%;
-    position: absolute;
+.main-index .form-section .card-body {
+  background-color: #F3F9D2;
 }
-/* Main envios */
-.list-envios > li {
-    list-style: none;
+.main-index .vid {
+  grid-row: 3/4;
+  width: 100%;
 }
-.list-envios > li > strong {
-    font-weight: 400;
-    text-decoration: underline 1px double;
-    font-size: 18px;
+.main-index .vid > video {
+  width: fit-content;
+  height: 400px;
 }
-/* Main contactos */
-.main-contacto {
-    width: 100%;
-    height: fit-content;
-    margin: 0px 10px;
-}
-.form-contacto {
-    display: flex;
-    width: 100vw;
-}
-ul {
-    list-style: none;
-}
-.Horario {
-    font-weight: 700;
-}
-@media screen and (max-width: 767px) {
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-}
-/* Main Info*/
-.main-info {
-    margin-top: 20px;
-}
-.row > h1 {
-    text-decoration: underline double black;
-}
-.text-center > h2 {
-    text-decoration: underline double black;
-}
-.footer-Info {
-    margin-top: 20px !important;
-}
+
+/*# sourceMappingURL=style.css.map */
