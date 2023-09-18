@@ -1,0 +1,12 @@
+* {
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: burlywood;
+}
+h1 {
+    text-decoration: underline dotted tomato;
+}
+div {
+    background-color: blue;
+    border: 1px solid black;
+}
