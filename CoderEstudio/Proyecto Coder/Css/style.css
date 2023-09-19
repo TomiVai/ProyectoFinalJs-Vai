@@ -79,10 +79,13 @@ body {
   object-fit: cover;
 }
 
-.list-envios > li {
+.row {
+  margin-bottom: 40px;
+}
+.row .list-envios > li {
   list-style: none;
 }
-.list-envios > li strong {
+.row .list-envios > li strong {
   font-weight: 400;
   text-decoration: underline 1px double;
   font-size: 18px;

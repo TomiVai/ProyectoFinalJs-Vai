@@ -85,13 +85,16 @@ body {
     }
 }
 //Envios// 
-.list-envios > li {
-    list-style: none;
-    strong {
-    font-weight: 400;
-    text-decoration: underline 1px double;
-    font-size: 18px;
-}
+.row {
+    margin-bottom: 40px;
+    .list-envios > li {
+        list-style: none;
+        strong {
+        font-weight: 400;
+        text-decoration: underline 1px double;
+        font-size: 18px;
+        }
+    }
 }
 /* Main contactos */
 .main-contacto {
