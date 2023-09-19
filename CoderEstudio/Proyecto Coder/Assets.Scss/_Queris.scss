@@ -8,8 +8,8 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: fit-content fit-content 1fr;
-        width: 100%;
-        grid-auto-flow: column;
+        width: 100vw;
+        grid-auto-flow: row;
         justify-content: center;
         .Index-Container {
         justify-self: center;
@@ -49,14 +49,14 @@
 }
 @media screen and (max-width: 767px) {
     body {
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
     .main-index {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        width: 100vw;
+        width: 100%;
         grid-auto-flow: row;
         justify-content: center;
         .Index-Container {
@@ -68,18 +68,16 @@
     }
         .main-final {
         display: grid;
-        width: 100%;
-        grid-template-columns: auto;
+        width: 100vw;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr;
         gap: 5px;
         grid-auto-flow: row;
         grid-row: 3/4;
     }
         .text-vid {
-        grid-column: auto;
+        text-align: center;    
         grid-row: 1/2;
-        justify-content: safe;
-        flex-wrap: wrap;
     }
         .vid {
         grid-column: auto;
@@ -87,5 +85,9 @@
         width: 100%;
         justify-self: center;
     }
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
     }
 }

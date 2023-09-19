@@ -1,4 +1,3 @@
-@import url(../Assets.Scss/_Queris.scss);
 * {
   font-weight: 200;
   scroll-behavior: smooth;
@@ -39,6 +38,7 @@ body {
   text-decoration: underline double black;
 }
 .main-index .form-section {
+  text-align-last: center;
   grid-row: 2/3;
 }
 .main-index .form-section .form-index {
@@ -63,6 +63,151 @@ body {
 .main-index .vid > video {
   width: fit-content;
   height: 400px;
+}
+
+.main-productos h1, .main-productos h2 {
+  text-align: center;
+  font-weight: 300;
+  text-decoration: underline double black;
+}
+.main-productos h3 {
+  font-size: 23px;
+  text-align: center;
+  text-decoration: underline double black;
+}
+.main-productos .card .card1 > img {
+  object-fit: cover;
+}
+
+.list-envios > li {
+  list-style: none;
+}
+.list-envios > li strong {
+  font-weight: 400;
+  text-decoration: underline 1px double;
+  font-size: 18px;
+}
+
+/* Main contactos */
+.main-contacto {
+  width: 100%;
+  height: fit-content;
+  margin: 0px 10px;
+}
+.main-contacto ul {
+  list-style: none;
+}
+.main-contacto ul .Horario {
+  font-weight: 700;
+}
+.main-contacto .form-contacto {
+  display: flex;
+  width: 100vw;
+}
+
+.main-info {
+  margin-top: 20px;
+}
+.main-info h1, .main-info h2 {
+  text-decoration: underline double black;
+}
+
+.footer-Info {
+  margin-top: 20px !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main-index {
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content fit-content 1fr;
+    width: 100vw;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  .main-index .Index-Container {
+    justify-self: center;
+    grid-row: 1/2;
+    height: fit-content !important;
+  }
+  .main-index .Index-Container > p {
+    display: inline-block !important;
+  }
+  .main-index .form-section {
+    width: 100%;
+    justify-self: center;
+    grid-row: 2/3;
+  }
+  .main-index .main-final {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-row: 3/4;
+  }
+  .main-index .text-vid {
+    grid-column: auto;
+    grid-row: 1/2;
+    justify-content: safe;
+    flex-wrap: wrap;
+  }
+  .main-index .vid {
+    grid-column: auto;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 100%;
+  }
+  .main-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  .main-index .Index-Container {
+    grid-row: 1/2;
+  }
+  .main-index .form-section {
+    justify-self: center;
+    grid-row: 2/3;
+  }
+  .main-index .main-final {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-row: 3/4;
+  }
+  .main-index .text-vid {
+    text-align: center;
+    grid-row: 1/2;
+  }
+  .main-index .vid {
+    grid-column: auto;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

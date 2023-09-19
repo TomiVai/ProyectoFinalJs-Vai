@@ -1,29 +1,31 @@
+@import "../Assets.Scss/Variables.scss" ;
+
 * {
     font-weight: 200;
     scroll-behavior: smooth;
     font-family: 'Amaranth', sans-serif;
 }
 body {
-    background-color: #F3F9D2;
+    background-color: $background;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100vw;
+    width: $anchovp;
     height: 100vh;
 }
 .navbar {
-    background-color: #3D0B37 !important;
+    background-color: $fondonav !important;
     .navbar-brand, .nav-link {
-        color: #F3F9D2 !important;
+        color: $background !important;
     }
 }
 // Main Style //
 .navbar-toggler {
-    background-color: #F3F9D2;
+    background-color: $background;
 }
 .main-index {
     margin-top: 20px;
-    width: 100%;
+    width: $ancho;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
@@ -35,32 +37,86 @@ body {
     }
     // Form Inicio de Sesion //
     .form-section {
+        text-align-last: center;
         grid-row: 2/3;
         .form-index {
         gap: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    } 
+        } 
         .form-index > header {
         text-align: center;
-    }
+        }
         .btn {
         margin-top: 8px;
-    }
+        }
         .card-body {
-        background-color: #F3F9D2;
-    }
+        background-color: $background;
+        }
     } 
     // Video //
     .vid {
         grid-row: 3/4;
-        width: 100%;
+        width: $ancho;
     }
     .vid > video {
         width: fit-content;
         height: 400px;
     }
 }
-@import url(../Assets.Scss/_Queris.scss);
 // Fin De Index //
+//Productos Style//
+.main-productos {
+    h1, h2 {
+        text-align: center;
+        font-weight: 300;
+        text-decoration: underline double black;
+    }
+    h3 {
+        font-size: 23px;
+        text-align: center;
+        text-decoration: underline double black;
+    }
+    .card {
+        .card1 > img {
+            object-fit: cover;
+        }
+    }
+}
+//Envios// 
+.list-envios > li {
+    list-style: none;
+    strong {
+    font-weight: 400;
+    text-decoration: underline 1px double;
+    font-size: 18px;
+}
+}
+/* Main contactos */
+.main-contacto {
+    width: $ancho;
+    height: fit-content;
+    margin: 0px 10px;
+    ul {
+    list-style: none;
+    .Horario {
+    font-weight: 700;
+    }
+    }
+    .form-contacto {
+    display: flex;
+    width: $anchovp;
+    }
+}
+// Main info //
+.main-info {
+    margin-top: 20px;
+    h1, h2 {
+    text-decoration: underline double black;
+    }
+}
+.footer-Info {
+    margin-top: 20px !important;
+}
+@import "../Assets.Scss/Queris.scss";
