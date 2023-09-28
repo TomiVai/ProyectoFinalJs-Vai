@@ -28,14 +28,41 @@ body {
   margin-top: 20px;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: fit-content repeat(2, 1fr);
   grid-template-columns: 1fr;
+  row-gap: 20px;
 }
 .main-index .Index-Container {
   grid-row: 1/2;
+  background-image: url(https://i.gifer.com/7I3O.gif);
+  background-size: cover;
+  color: #FFFFFF;
+  font-weight: 900;
 }
-.main-index .Index-Container > li {
-  text-decoration: underline double black;
+.main-index .Index-Container li {
+  text-decoration: underline double white;
+}
+.main-index .main-final {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row: 3/4;
+  grid-column: 1fr;
+  row-gap: 10px;
+}
+.main-index .main-final .text-final {
+  background-image: url(../Imagenes/00IMPORTS-jumbo.gif);
+  grid-row: 1/2;
+  grid-column: span;
+}
+.main-index .main-final .text-final p {
+  font-size: 22px;
+  color: #FFFFFF;
+  padding: 40px;
+  font-weight: bolder;
+}
+.main-index .main-final .vid-final {
+  grid-column: span;
+  grid-row: 2/3;
 }
 .main-index .form-section {
   text-align-last: center;
@@ -53,16 +80,8 @@ body {
 .main-index .form-section .btn {
   margin-top: 8px;
 }
-.main-index .form-section .card-body {
+.main-index .form-section .card-body-index {
   background-color: #F3F9D2;
-}
-.main-index .vid {
-  grid-row: 3/4;
-  width: 100%;
-}
-.main-index .vid > video {
-  width: fit-content;
-  height: 400px;
 }
 
 .main-productos h1, .main-productos h2 {
@@ -75,8 +94,18 @@ body {
   text-align: center;
   text-decoration: underline double black;
 }
-.main-productos .card .card1 > img {
+.main-productos .card-productos {
+  align-items: center;
+  border-radius: 5px 5px 10px 10px;
+  color: #F3F9D2;
+  background-color: #3D0B37;
+}
+.main-productos .card-productos img {
   object-fit: cover;
+}
+.main-productos .card-productos .btn-productos {
+  background-color: #F3F9D2;
+  color: #3D0B37;
 }
 
 .row {
@@ -178,11 +207,11 @@ body {
     height: 100%;
   }
   .navbar {
-    grid-column: span;
+    grid-column: auto;
     grid-row: 1/2;
   }
   .main-index {
-    grid-column: span;
+    grid-column: auto;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -223,7 +252,7 @@ body {
   }
   footer {
     grid-row: 3/4;
-    grid-column: span;
+    grid-column: auto;
   }
 }
 

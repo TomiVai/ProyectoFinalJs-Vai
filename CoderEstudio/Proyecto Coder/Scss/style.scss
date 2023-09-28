@@ -10,14 +10,41 @@
     margin-top: 20px;
     width: $ancho;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: fit-content repeat(2, 1fr);
     grid-template-columns: 1fr;
+    row-gap: 20px;
     .Index-Container {
         grid-row: 1/2;
+        background-image: url(https://i.gifer.com/7I3O.gif);
+        background-size: cover;
+        color: #FFFFFF;
+        font-weight: 900;
+        li {
+            text-decoration: underline double white;
+        }
     }
-    .Index-Container > li {
-        text-decoration: underline double black;
-    }
+    .main-final {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row: 3/4;
+        grid-column: 1fr;
+        row-gap: 10px;
+        .text-final {
+            background-image: url(../Imagenes/00IMPORTS-jumbo.gif);
+            grid-row: 1/2;
+            grid-column: span;
+            p {
+                font-size: 22px;
+                color: #FFFFFF;
+                padding: 40px;
+                font-weight: bolder;
+            }
+        }
+        .vid-final {
+            grid-column: span;
+            grid-row: 2/3;
+        }
+        }
     // Form Inicio de Sesion //
     .form-section {
         text-align-last: center;
@@ -34,19 +61,10 @@
         .btn {
         margin-top: 8px;
         }
-        .card-body {
+        .card-body-index {
         background-color: $background;
         }
     } 
-    // Video //
-    .vid {
-        grid-row: 3/4;
-        width: $ancho;
-    }
-    .vid > video {
-        width: fit-content;
-        height: 400px;
-    }
 }
 // Fin De Index //
 //Productos Style//
@@ -61,9 +79,17 @@
         text-align: center;
         text-decoration: underline double black;
     }
-    .card {
-        .card1 > img {
+    .card-productos {
+        align-items: center;
+        border-radius: 5px 5px 10px 10px;
+        color: $background;
+        background-color: $fondonav;
+        img {
             object-fit: cover;
+        }
+        .btn-productos {
+            background-color: $background;
+            color: $fondonav;
         }
     }
 }
@@ -105,4 +131,4 @@
 .footer-Info {
     margin-top: 20px !important;
 }
-@import "../Assets.Scss/Queris.scss";
+@import "../Assets.Scss/Queris.scss"
