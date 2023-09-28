@@ -17,10 +17,10 @@
         grid-row: 1/2;
         background-image: url(https://i.gifer.com/7I3O.gif);
         background-size: cover;
-        color: #FFFFFF;
+        color: $colori;
         font-weight: 900;
         li {
-            text-decoration: underline double white;
+            text-decoration: underline double $colori;
         }
     }
     .main-final {
@@ -30,12 +30,13 @@
         grid-column: 1fr;
         row-gap: 10px;
         .text-final {
+            background-size: contain;
             background-image: url(../Imagenes/00IMPORTS-jumbo.gif);
             grid-row: 1/2;
             grid-column: span;
             p {
                 font-size: 22px;
-                color: #FFFFFF;
+                color: $colori;
                 padding: 40px;
                 font-weight: bolder;
             }
@@ -43,6 +44,9 @@
         .vid-final {
             grid-column: span;
             grid-row: 2/3;
+            video {
+                width: $ancho;
+            }
         }
         }
     // Form Inicio de Sesion //
@@ -69,6 +73,11 @@
 // Fin De Index //
 //Productos Style//
 .main-productos {
+    .btn-productos {
+        background-color: $background;
+        border: none;
+        color: black;
+    }
     h1, h2 {
         text-align: center;
         font-weight: 300;
