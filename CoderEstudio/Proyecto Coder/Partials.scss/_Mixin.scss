@@ -1,0 +1,44 @@
+@mixin general() {
+    * {
+        font-weight: 200;
+        scroll-behavior: smooth;
+        font-family: $fuente;
+    }
+    body {
+        background-color: $background;
+        overflow-x: hidden;
+        width: $anchovp;
+        height: 100vh;
+        .navbar {
+            .navbar-toggler {
+            background-color: $background;
+            }
+            .navbar-brand, .nav-link {
+                color: $background;
+            }
+            .navbar-brand {
+                font-weight: bolder;
+                font-size: 20px;
+                margin-left: $margennav;
+            }
+            .navbar-collapse {
+                a {
+                    margin: auto $margennav;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@mixin gridindex($display,$columns,$rows,$gap) {
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+@mixin parrafo($size,$color,$pad,$weight) {
+    font-size: $size;
+    color: $color;
+    padding: $pad;
+    font-weight: $weight;
+}

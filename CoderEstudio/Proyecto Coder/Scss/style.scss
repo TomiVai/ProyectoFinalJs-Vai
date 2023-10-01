@@ -1,18 +1,15 @@
-@import "../Assets.Scss/Variables.scss" ;
-@import "../Assets.Scss/Mixin.scss" ;
+@import "../Partials.scss/Variables.scss" ;
+@import "../Partials.Scss/Mixin.scss" ;
 
 @include general ;
-// Main Style //
-.navbar-toggler {
-    background-color: $background;
+// Index Style //
+.navbar {
+    background-color: $fondonav !important;
 }
 .main-index {
     margin-top: 20px;
     width: $ancho;
-    display: grid;
-    grid-template-rows: fit-content repeat(2, 1fr);
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+    @include gridindex (grid, 1fr, fit-content repeat(2, 1fr), 20px);
     .Index-Container {
         grid-row: 1/2;
         background-image: url(https://i.gifer.com/7I3O.gif);
@@ -35,10 +32,7 @@
             grid-row: 1/2;
             grid-column: span;
             p {
-                font-size: 22px;
-                color: $colori;
-                padding: 40px;
-                font-weight: bolder;
+                @include parrafo (22px, #ffffffff, 40px, bolder);
             }
         }
         .vid-final {
@@ -70,13 +64,16 @@
         }
     } 
 }
-// Fin De Index //
-//Productos Style//
+//Productos//
 .main-productos {
     .btn-productos {
         background-color: $background;
         border: none;
         color: black;
+    }
+    .card-p {
+        background-color: $background;
+        border: none;
     }
     h1, h2 {
         text-align: center;
@@ -103,8 +100,11 @@
     }
 }
 //Envios// 
-.row {
-    margin-bottom: 40px;
+.Info-envios {
+    margin: 40px 0px;
+    ul > li {
+        list-style: none;
+    }
     .list-envios > li {
         list-style: none;
         strong {
@@ -114,7 +114,7 @@
         }
     }
 }
-/* Main contactos */
+/* Contactos */
 .main-contacto {
     width: $ancho;
     height: fit-content;
@@ -125,12 +125,26 @@
     font-weight: 700;
     }
     }
-    .form-contacto {
-    display: flex;
-    width: $anchovp;
+    .form-contactos {
+        label {
+            color: blue;
+            text-decoration: underline double grey;
+            font-size: 20px;
+        }
+        input, textarea {
+            font-size: 17px;
+            background-color: $fondonav;
+            color: $background;
+        }
+        input::placeholder , textarea::placeholder {
+            color: $background;
+        }
+        .botonC {
+            background-color: $fondonav;
+        }
     }
 }
-// Main info //
+// Info //
 .main-info {
     margin-top: 20px;
     h1, h2 {
@@ -140,4 +154,4 @@
 .footer-Info {
     margin-top: 20px !important;
 }
-@import "../Assets.Scss/Queris.scss"
+@import "../Partials.scss/Queris.scss";
