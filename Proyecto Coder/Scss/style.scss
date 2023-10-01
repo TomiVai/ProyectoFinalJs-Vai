@@ -1,0 +1,157 @@
+@import "../Partials.scss/Variables.scss" ;
+@import "../Partials.Scss/Mixin.scss" ;
+
+@include general ;
+// Index Style //
+.navbar {
+    background-color: $fondonav !important;
+}
+.main-index {
+    margin-top: 20px;
+    width: $ancho;
+    @include gridindex (grid, 1fr, fit-content repeat(2, 1fr), 20px);
+    .Index-Container {
+        grid-row: 1/2;
+        background-image: url(https://i.gifer.com/7I3O.gif);
+        background-size: cover;
+        color: $colori;
+        font-weight: 900;
+        li {
+            text-decoration: underline double $colori;
+        }
+    }
+    .main-final {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row: 3/4;
+        grid-column: 1fr;
+        row-gap: 10px;
+        .text-final {
+            background-size: contain;
+            background-image: url(../Imagenes/00IMPORTS-jumbo.gif);
+            grid-row: 1/2;
+            grid-column: span;
+            p {
+                @include parrafo (22px, #ffffffff, 40px, bolder);
+            }
+        }
+        .vid-final {
+            grid-column: span;
+            grid-row: 2/3;
+            video {
+                width: $ancho;
+            }
+        }
+        }
+    // Form Inicio de Sesion //
+    .form-section {
+        text-align-last: center;
+        grid-row: 2/3;
+        .form-index {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        } 
+        .form-index > header {
+        text-align: center;
+        }
+        .btn {
+        margin-top: 8px;
+        }
+        .card-body-index {
+        background-color: $background;
+        }
+    } 
+}
+//Productos//
+.main-productos {
+    .btn-productos {
+        background-color: $background;
+        border: none;
+        color: black;
+    }
+    .card-p {
+        background-color: $background;
+        border: none;
+    }
+    h1, h2 {
+        text-align: center;
+        font-weight: 300;
+        text-decoration: underline double black;
+    }
+    h3 {
+        font-size: 23px;
+        text-align: center;
+        text-decoration: underline double black;
+    }
+    .card-productos {
+        align-items: center;
+        border-radius: 5px 5px 10px 10px;
+        color: $background;
+        background-color: $fondonav;
+        img {
+            object-fit: cover;
+        }
+        .btn-productos {
+            background-color: $background;
+            color: $fondonav;
+        }
+    }
+}
+//Envios// 
+.Info-envios {
+    margin: 40px 0px;
+    ul > li {
+        list-style: none;
+    }
+    .list-envios > li {
+        list-style: none;
+        strong {
+        font-weight: 400;
+        text-decoration: underline 1px double;
+        font-size: 18px;
+        }
+    }
+}
+/* Contactos */
+.main-contacto {
+    width: $ancho;
+    height: fit-content;
+    margin: 0px 10px;
+    ul {
+    list-style: none;
+    .Horario {
+    font-weight: 700;
+    }
+    }
+    .form-contactos {
+        label {
+            color: blue;
+            text-decoration: underline double grey;
+            font-size: 20px;
+        }
+        input, textarea {
+            font-size: 17px;
+            background-color: $fondonav;
+            color: $background;
+        }
+        input::placeholder , textarea::placeholder {
+            color: $background;
+        }
+        .botonC {
+            background-color: $fondonav;
+        }
+    }
+}
+// Info //
+.main-info {
+    margin-top: 20px;
+    h1, h2 {
+    text-decoration: underline double black;
+    }
+}
+.footer-Info {
+    margin-top: 20px !important;
+}
+@import "../Partials.scss/Queris.scss";

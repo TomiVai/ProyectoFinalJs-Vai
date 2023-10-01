@@ -1,0 +1,291 @@
+* {
+  font-weight: 200;
+  scroll-behavior: smooth;
+  font-family: "Amaranth", sans-serif;
+}
+
+body {
+  background-color: #F3F9D2;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+body .navbar .navbar-toggler {
+  background-color: #F3F9D2;
+}
+body .navbar .navbar-brand, body .navbar .nav-link {
+  color: #F3F9D2;
+}
+body .navbar .navbar-brand {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 15px;
+}
+body .navbar .navbar-collapse a {
+  margin: auto 15px;
+  font-size: 17px;
+}
+
+.navbar {
+  background-color: #3D0B37 !important;
+}
+
+.main-index {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content repeat(2, 1fr);
+  gap: 20px;
+}
+.main-index .Index-Container {
+  grid-row: 1/2;
+  background-image: url(https://i.gifer.com/7I3O.gif);
+  background-size: cover;
+  color: white;
+  font-weight: 900;
+}
+.main-index .Index-Container li {
+  text-decoration: underline double white;
+}
+.main-index .main-final {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row: 3/4;
+  grid-column: 1fr;
+  row-gap: 10px;
+}
+.main-index .main-final .text-final {
+  background-size: contain;
+  background-image: url(../Imagenes/00IMPORTS-jumbo.gif);
+  grid-row: 1/2;
+  grid-column: span;
+}
+.main-index .main-final .text-final p {
+  font-size: 22px;
+  color: white;
+  padding: 40px;
+  font-weight: bolder;
+}
+.main-index .main-final .vid-final {
+  grid-column: span;
+  grid-row: 2/3;
+}
+.main-index .main-final .vid-final video {
+  width: 100%;
+}
+.main-index .form-section {
+  text-align-last: center;
+  grid-row: 2/3;
+}
+.main-index .form-section .form-index {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-index .form-section .form-index > header {
+  text-align: center;
+}
+.main-index .form-section .btn {
+  margin-top: 8px;
+}
+.main-index .form-section .card-body-index {
+  background-color: #F3F9D2;
+}
+
+.main-productos .btn-productos {
+  background-color: #F3F9D2;
+  border: none;
+  color: black;
+}
+.main-productos .card-p {
+  background-color: #F3F9D2;
+  border: none;
+}
+.main-productos h1, .main-productos h2 {
+  text-align: center;
+  font-weight: 300;
+  text-decoration: underline double black;
+}
+.main-productos h3 {
+  font-size: 23px;
+  text-align: center;
+  text-decoration: underline double black;
+}
+.main-productos .card-productos {
+  align-items: center;
+  border-radius: 5px 5px 10px 10px;
+  color: #F3F9D2;
+  background-color: #3D0B37;
+}
+.main-productos .card-productos img {
+  object-fit: cover;
+}
+.main-productos .card-productos .btn-productos {
+  background-color: #F3F9D2;
+  color: #3D0B37;
+}
+
+.Info-envios {
+  margin: 40px 0px;
+}
+.Info-envios ul > li {
+  list-style: none;
+}
+.Info-envios .list-envios > li {
+  list-style: none;
+}
+.Info-envios .list-envios > li strong {
+  font-weight: 400;
+  text-decoration: underline 1px double;
+  font-size: 18px;
+}
+
+/* Contactos */
+.main-contacto {
+  width: 100%;
+  height: fit-content;
+  margin: 0px 10px;
+}
+.main-contacto ul {
+  list-style: none;
+}
+.main-contacto ul .Horario {
+  font-weight: 700;
+}
+.main-contacto .form-contactos label {
+  color: blue;
+  text-decoration: underline double grey;
+  font-size: 20px;
+}
+.main-contacto .form-contactos input, .main-contacto .form-contactos textarea {
+  font-size: 17px;
+  background-color: #3D0B37;
+  color: #F3F9D2;
+}
+.main-contacto .form-contactos input::placeholder, .main-contacto .form-contactos textarea::placeholder {
+  color: #F3F9D2;
+}
+.main-contacto .form-contactos .botonC {
+  background-color: #3D0B37;
+}
+
+.main-info {
+  margin-top: 20px;
+}
+.main-info h1, .main-info h2 {
+  text-decoration: underline double black;
+}
+
+.footer-Info {
+  margin-top: 20px !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main-index {
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content fit-content 1fr;
+    width: 100vw;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  .main-index .Index-Container {
+    justify-self: center;
+    grid-row: 1/2;
+    height: fit-content !important;
+  }
+  .main-index .Index-Container > p {
+    display: inline-block !important;
+  }
+  .main-index .form-section {
+    width: 100%;
+    justify-self: center;
+    grid-row: 2/3;
+  }
+  .main-index .main-final {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-row: 3/4;
+  }
+  .main-index .text-final {
+    grid-column: auto;
+    grid-row: 1/2;
+    justify-content: safe;
+    flex-wrap: wrap;
+  }
+  .main-index .vid-final {
+    grid-column: auto;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    display: grid;
+    grid-template-rows: fit-content 1fr fit-content;
+    grid-template-columns: 100vw;
+    grid-auto-flow: row;
+  }
+  .navbar {
+    grid-column: span;
+    grid-row: 1/2;
+  }
+  .main-index {
+    grid-column: span;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, fit-content);
+    width: 100%;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  .main-index .Index-Container {
+    grid-row: 1/2;
+  }
+  .main-index .form-section {
+    justify-self: center;
+    grid-row: 2/3;
+  }
+  .main-index .main-final {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-row: 3/4;
+  }
+  .main-index .main-final .text-final {
+    grid-row: 1/2;
+  }
+  .main-index .main-final .vid-final {
+    grid-column: span;
+    align-self: center;
+    object-fit: scale-down;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    grid-row: 3/4;
+    grid-column: span;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
