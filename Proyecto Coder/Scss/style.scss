@@ -1,5 +1,5 @@
-@import "../partials/Variables" ;
-@import "../partials/Mixin" ;
+@import "partials/Mixin" ;
+@import "partials/Variables" ;
 
 @include general ;
 // Index Style //
@@ -154,4 +154,4 @@
 .footer-Info {
     margin-top: 20px !important;
 }
-@import "../partials/Queris" ;
+@import "partials/Queris" ;
